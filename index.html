@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,17 +11,9 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
-
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-
   <!-- START: header -->
-
-  
   <div class="probootstrap-loader"></div>
 
   <header role="banner" class="probootstrap-header">
@@ -61,7 +53,7 @@
             <div class="probootstrap-slider-text text-center">
               <h1 class="probootstrap-heading probootstrap-animate mb20" data-animate-effect="fadeIn">Diviertete</h1>
               <div class="probootstrap-animate probootstrap-sub-wrap mb30" data-animate-effect="fadeIn">Nos ofrecemos a animar tu evento <a href="https://mundofeliz.com/">mundofeliz.com</a><a href="https://uicookies.com/license/"> Creado por Triforce</a></div>
-              <p class="probootstrap-animate" data-animate-effect="fadeIn"><a href="#" class="btn btn-ghost btn-ghost-white">Get This</a></p>
+              <p class="probootstrap-animate" data-animate-effect="fadeIn"><a href="#" class="btn btn-ghost btn-ghost-white">Regresar al inicio</a></p>
             </div>
           </div>
         </div>
@@ -80,7 +72,6 @@
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -89,81 +80,98 @@
         </div>
         <div class="modal-body">
          <!--ventana con logeo-->
-         <div class="container">
-      <div class="row">
+ <div class="container">
+    <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="panel panel-login">
           <div class="panel-heading">
             <div class="row">
               <div class="col-xs-6">
-                <a href="#" class="active" id="login-form-link">Login</a>
+                <a href="#" class="active" id="login-form-link">Entrar</a>
               </div>
-              <div class="col-xs-6">
-                <a href="#" id="register-form-link">Register</a>
-              </div>
+            <div class="col-xs-6">
+                <a href="#" id="register-form-link">Registrate</a>
             </div>
-            <hr>
-          </div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-lg-12">
-                <form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
-                  <div class="form-group">
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                  </div>
-                  <div class="form-group text-center">
-                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-                    <label for="remember"> Remember Me</label>
-                  </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-sm-6 col-sm-offset-3">
-                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
-                      </div>
+            </div><hr>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                    <div class="form-group">
+                      <input type="text" name="nombre" id="username" tabindex="1" class="form-control" placeholder="Nombre" value="">
+                    </div> 
+                    <div class="form-group">
+                      <input type="password" name="contraseña" id="password" tabindex="2" class="form-control" placeholder="Contraseña">
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="text-center">
-                          <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                    <div class="form-group text-center">
+                      <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                      <label for="remember"> Recuerdame</label>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                          <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Entrar">
                         </div>
                       </div>
                     </div>
-                  </div>
-                </form>
-                <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
-                  <div class="form-group">
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-                  </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-sm-6 col-sm-offset-3">
-                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                     <div class="form-group">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="text-center">
+                            <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Olvidaste tu contraseña?</a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+                  </form>
+            <form id="register-form" action="" method="post" role="form" style="display: none;">
+                    <div class="form-group">
+                      <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Nombre(s)" value="">
+                    </div>
+                   <div class="form-group col-lg-6">
+                      <input type="text" name="apepat" id="apepat" tabindex="1" class="form-control" placeholder="Apellido Paterno" value="">
+                   </div>
+                    <div class="form-group col-lg-6">
+                      <input type="text" name="apemat" id="apemat" tabindex="1" class="form-control" placeholder="Apellido Materno" value="">
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <input type="text" name="edad" id="edad" tabindex="1" class="form-control" placeholder="Edad" value="">
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <input type="text" name="telefono" id="tele" tabindex="1" class="form-control" placeholder="Telefono" value="">
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <input type="text" name="dele" id="dele" tabindex="1" class="form-control" placeholder="Delegacion" value="">
+                    </div>
+                    <div class="form-group col-lg-6">
+                       <input type="text" name="codigo" id="codigo" tabindex="1" class="form-control" placeholder="Codigo Postal" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico" value="">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input type="password" name="pass" id="password" tabindex="2" class="form-control" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirma contraseña">
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Registrate ahora">
+                        </div>
+                      </div>
+                    </div>
+                    ¨***
+              </form>
+     <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
+      
     </div>
   </div>
-
+  </div>
   <!-- END: slider  -->
   <section class="probootstrap-section">
     <div class="container">
@@ -316,6 +324,70 @@
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
+  <script type="text/javascript">
+      enviarDatosRegistro();
+      //login();
+      //hacerUpdate();
+
+      //ajax para guardar los datos del registro.
+      function enviarDatosRegistro(){
+        $('#register-form').submit(function(e){
+          //evitar pagina se recargue
+          e.preventDefault();
+          //meter todos los datos del formulario de un golpe
+          var frmRegistro = $("#register-form").serialize();
+          //metodos ajax
+          $.ajax({
+            method: "POST",
+            url:    "scripts/php/registro.php",
+            data:   frmRegistro,
+            beforeSend: function(){
+              //colocamos icono de recarga
+              alert(frmRegistro);
+              $("#registrando").css("display","block");
+            }
+          }).done(function(data) {//true
+            //si se realizo el envio de ftp datos
+            //se muestra lo que ponga
+            //alert(data);
+            alert(data);
+            //var mst = data;
+            //registroCorrecto(mst);
+          }).fail(function(){//false
+            limpiarFormularioRegistro(frmRegistro);
+          });
+        });
+      }
+      //borrar el formulario y variables.
+      function limpiarFormularioRegistro(form){
+        setTimeout(function(){
+              //poner el icono aqui que espere
+              $("#id01").hide();
+              form='';
+            $('#fusua')[0].reset();
+            $("#alertaBuena").css("display","none");
+              $("#alertaMala").css("display","none");
+          },2000);
+      }
+
+      //funcion de cola de efectos y ventana de registro exitoso
+      function registroCorrecto(mst,frmLogin){
+        if (mst == 'bien'){
+          //se muestra la ventana de contraseña de registro éxitoso una vez que la variable get sea igual a bien
+          setTimeout(function() {
+                  $("#registrando").css("display","none");
+              $("#alertaBuena").css("display","block");
+          }, 3000);
+              setTimeout(function() {
+                  $("#alertaBuena").css("display","none");
+                  $("#alertaMala").css("display","none");
+              }, 5000);
+              limpiarFormularioRegistro(frmLogin);
+          }else if(mst == 'dupla'){//de lo contrario 
+              regisroDuplicadoIncorrecto(frmLogin);
+          }
+      }         
+    </script> 
 
   </body>
 </html>
